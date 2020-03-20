@@ -1,7 +1,7 @@
 package scala.features
 
 /**
- * Another cool feature that can be found in Haskell, world. The Union type allow using [|]
+ * Scala3 brings another cool feature that can be found in Haskell, world. The Union type allow using [|]
  * in the definition to tell the compiler that he can expect a type of the group of types defined
  * using that operator to separate one to another.
  */

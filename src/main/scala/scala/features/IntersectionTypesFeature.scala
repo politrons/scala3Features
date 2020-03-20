@@ -2,7 +2,7 @@ package scala.features
 
 /**
  * Scala3 provide operator [&] for intersection type, which allow us to create types that contains two types.
- * using type C = A & B allow us using in C as type, all access functions and attributes of A and B
+ * using [type C = A & B] allow us using in C as type, all access functions and attributes of A and B
  */
 object IntersectionTypesFeature extends App{
 
