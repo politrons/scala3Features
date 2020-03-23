@@ -8,7 +8,7 @@ package scala.features
  * Well now, just using form the class [export instance.function_to_export] we can expose that
  * function from our class as adapter patter it will.
  */
-object ExportClausesFeature extends App{
+object ExportClausesFeature extends App {
 
   /**
    * Having a simple case class with two methods
@@ -30,10 +30,15 @@ object ExportClausesFeature extends App{
      * we will just expose what we want from the user. And then automatically, a method in Politrons class
      * [getName] it will be created.
      */
+
     export user.getName
+
   }
 
-  val politrons = new Politrons()
+  /**
+   * If you notice,yes in Scala3 the [new] to create instances, is not lomnger need it, we can do it just like case class.
+   */
+  val politrons = Politrons()
   println(politrons.getName())
   /**
    * Not compiling since is not exported.
