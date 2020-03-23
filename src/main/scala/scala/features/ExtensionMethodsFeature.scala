@@ -4,7 +4,7 @@ package scala.features
  * Extension methods in Scala3 is what we used to call extension class in Scala 2 using [implicit class A(type_you_want_extend){}]
  * Here is more elegant and readable, where we just need once we have the type, use def follow by the type to extend,
  * and then after . write the method attribute we want to extend.
- * Also another way less suggar but more readable is to use the keyboard [extension] and use it as we use to use [implicit class] 
+ * Also another way less suggar but more readable is to use the keyboard [extension] and use it as we use to use [implicit class]
  */
 object ExtensionMethodsFeature extends App{
 
@@ -24,14 +24,14 @@ object ExtensionMethodsFeature extends App{
 
   /**
    * Here we use Syntax [extension] variable [on] (Type to extend) where just like with implicit class
-   * we can deifne the extension methods. More verbose but definetly more readable. 
+   * we can deifne the extension methods. More verbose but definetly more readable.
    */
   extension myUser on (user:User) {
      def toUpperCaseName():String = user.name.toUpperCase()
   }
-  
+
   val user = User("Politrons","Picouto", 38)
-  
+
 
   /**
    * Once we define the instance, after being the def in the same context, we can use it in our program.
