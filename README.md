@@ -13,3 +13,4 @@ Here we cover with some practical examples, the most common use of Scala API.
 * **[Export Clauses](src/main/scala/scala/features/ExportClausesFeature.scala)**
 * **[Auto param tuples](src/main/scala/scala/features/AutoParamTuplingFeature.scala)**
 * **[Multiverse equality](src/main/scala/scala/features/MultiversalEqualityFeature.scala)**
+* **[Pattern matching](src/main/scala/scala/features/PatternMatchingFeature.scala)**
