@@ -14,3 +14,5 @@ Here we cover with some practical examples, the most common use of Scala API.
 * **[Auto param tuples](src/main/scala/scala/features/AutoParamTuplingFeature.scala)**
 * **[Multiverse equality](src/main/scala/scala/features/MultiversalEqualityFeature.scala)**
 * **[Pattern matching](src/main/scala/scala/features/PatternMatchingFeature.scala)**
+* **[Inline](src/main/scala/scala/features/InlineFeature.scala)**
+* **[Structure & Style](src/main/scala/scala/features/StructureStyleFeature.scala)**

@@ -17,11 +17,12 @@ object ImplicitFunctionFeature extends App {
   /**
    * Implicit type
    * -------------
-   * The syntax is use keyboard [given] providing a name then use keyboard [as] and the type you want to
+   * The syntax is use keyboard [given] and type, or providing a name then use keyboard [as] and the type you want to
    * define as implicit in the context where you're. Then you define the value of the implicit.
    */
-  given MyUser as User = User("Politons")
-
+  given User = User("Politons")
+//  given myuser as User = User("Politons")
+  
   /**
    * Now instead the keyboard [implicit] in the definition of the method, we use [using] and the we pass the type 
    * defined in the implicit.
@@ -39,7 +40,7 @@ object ImplicitFunctionFeature extends App {
    * ------------------
    * As I mention before, now in Scala3 we're able to define Implicit functions to be passed as argument into methods.
    */
-  given MyFunctionName as (User => String) = user => user.name
+  given (User => String) = user => user.name
 
   def getUserNameByFunc()(using func: (User => String)): String = {
     func(User("Politrons in a function"))
@@ -62,19 +63,19 @@ object ImplicitFunctionFeature extends App {
   /**
    * Three different implementations of TypeClass for Int, String and Udser type
    */
-  given intValue as TypeClass[Int] = new TypeClass[Int] {
+  given TypeClass[Int] = new TypeClass[Int] {
     def getValue(): Int = {
       1981
     }
   }
 
-  given stringValue as TypeClass[String] = new TypeClass[String] {
+  given TypeClass[String] = new TypeClass[String] {
     def getValue(): String = {
       "hello type class world"
     }
   }
 
-  given userValue as TypeClass[User] = new TypeClass[User] {
+  given TypeClass[User] = new TypeClass[User] {
     def getValue(): User = {
       User("politrons")
     }
