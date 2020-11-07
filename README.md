@@ -16,3 +16,4 @@ Here we cover with some practical examples, the most common use of Scala API.
 * **[Pattern matching](src/main/scala/scala/features/PatternMatchingFeature.scala)**
 * **[Inline](src/main/scala/scala/features/InlineFeature.scala)**
 * **[Structure & Style](src/main/scala/scala/features/StructureStyleFeature.scala)**
+* **[Opaque type](src/main/scala/scala/features/OpaqueTypeFeature.scala)**
