@@ -1,5 +1,3 @@
-package scala.features
-
 /**
  * Simple and cool feature. Now with Scala3 a class is not need it to define a class.
  * We can just use @main annotation in the file and it will be invoked as a main method.

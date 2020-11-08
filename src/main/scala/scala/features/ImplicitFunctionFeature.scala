@@ -1,9 +1,5 @@
 package scala.features
 
-import java.time.LocalDate
-
-import scala.features.ImplicitFunctionFeature.TypeClass
-
 /**
  * In Scala3 Implicit is not longer part of the language, and the use of [given] and [using] is required.
  * I found it more readable and also secure to avoid nasty and unsecure implicit conversions.

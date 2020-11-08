@@ -1,6 +1,5 @@
 package scala.features
 
-import scala.features.GivenInstancesFeatures.Politrons
 
 /**
  * Given instandes "givens" is the new way in Scala3 to create instances that can be used in the context where is

@@ -26,7 +26,7 @@ object ExtensionMethodsFeature extends App{
    * Here we use Syntax [extension] variable [on] (Type to extend) where just like with implicit class
    * we can deifne the extension methods. More verbose but definetly more readable.
    */
-  extension myUser on (user:User) {
+  extension(user:User) {
      def toUpperCaseName():String = user.name.toUpperCase()
   }
 
